@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>着せ替え幻想郷</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>着せ替え幻想郷</h1>
+
+  <div class="controls">
+    <label>カテゴリ:
+<select id="categorySelect" onchange="loadThumbnails()">
+  <option value="face">顔</option>
+  <option value="hair">髪</option>
+  <option value="sidehair">サイドヘアー</option>
+  <option value="back">背中</option>
+  <option value="inner">インナー</option>
+  <option value="tops">トップス</option>
+　<option value="bottoms">ボトムス</option>
+  <option value="socks">靴下</option>
+  <option value="shoes">靴</option>
+  <option value="outer">上着</option>
+  <option value="accessories">アクセサリー</option>
+  <option value="headwear">髪飾り</option>
+  <option value="occiput">髪飾り2</option>
+  <option value="item">アイテム</option>
+  <option value="others">その他</option>
+</select>
+    </label>
+    <button onclick="loadThumbnails()">読み込む</button>
+  </div>
+
+<div class="preset-select-wrapper">
+  <button class="preset-toggle-btn" onclick="togglePresetList()">キャラクター選択 ▼</button>
+  <div id="presetList" class="preset-list hidden">
+    <!-- JSで動的に中身を入れる -->
+  </div>
+</div>
+
+  <div id="thumbnails" class="thumbnails"></div>
+
+  <div id="canvas" class="canvas">
+    <img src="assets/base.png" class="layer base" />
+  </div>
+
+<button onclick="saveCanvasImage()">画像を保存する</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
