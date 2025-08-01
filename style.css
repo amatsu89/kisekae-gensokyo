@@ -124,35 +124,33 @@ body { font-family: sans-serif; text-align: center; }
   background: #e0e0e0;
 }
 
-/* スマホ画面サイズ向けに調整 */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .canvas {
-    width: 90vw;
-    height: calc(90vw * 1.25); /* 縦横比を保つ */
+    width: 90vw;   /* 画面幅の90% */
+    height: auto;
   }
 
   .layer {
-    width: 100%;
-    height: 100%;
+    width: 90vw;
+    height: auto;
   }
 
   .thumbnail {
-    width: 48px;
-    height: 48px;
-  }
-
-  .controls select,
-  .controls button {
-    font-size: 16px;
-    padding: 8px;
+    width: 80px;
+    height: 80px;
   }
 
   .preset-item img {
-    width: 32px;
-    height: 32px;
+    width: 64px;
+    height: 64px;
   }
 
   .preset-item span {
-    font-size: 14px;
+    font-size: 1.1rem;
+  }
+
+  .preset-nav button {
+    font-size: 1rem;
+    padding: 0.5em 1em;
   }
 }
