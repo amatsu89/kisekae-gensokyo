@@ -331,27 +331,37 @@ function togglePresetList() {
 }
 
 function saveCanvasImage() {
-  const width = 300;
-  const height = 375;
+  const exportWidth = 800;
+  const exportHeight = 1000;
+
+  // 保存用キャンバス（非表示）
   const exportCanvas = document.createElement('canvas');
-  exportCanvas.width = width;
-  exportCanvas.height = height;
+  exportCanvas.width = exportWidth;
+  exportCanvas.height = exportHeight;
   const ctx = exportCanvas.getContext('2d');
 
-  // ベースレイヤー（背景）も含めて描画する
-  const base = canvas.querySelector('.base');
-  if (base) {
-    ctx.drawImage(base, 0, 0, width, height);
-  }
+  // 背景は透明のまま（←重要）
+  ctx.clearRect(0, 0, exportWidth, exportHeight);
 
-  // canvas内のレイヤー画像を順に描画（zIndex順）
-  const layers = Array.from(canvas.getElementsByClassName('layer'));
-  layers
-    .sort((a, b) => parseInt(a.style.zIndex) - parseInt(b.style.zIndex))
-    .forEach(img => {
-      ctx.drawImage(img, 0, 0, width, height);
-    });
+  // 今表示されているレイヤーを「順番通り」に描画
+  const layers = document.querySelectorAll('.layer');
 
+  layers.forEach(layer => {
+    if (!layer.src) return;
+
+    const img = new Image();
+    img.src = layer.src;
+
+    img.onload = () => {
+      ctx.drawImage(img, 0, 0, exportWidth, exportHeight);
+
+      // 最後の1枚が描画されたら保存
+      if (img === layers[layers.length - 1]) {
+        downloadImage(exportCanvas);
+      }
+    };
+  });
+}
   // ユーザーにファイル名を入力してもらう（デフォルト名付き）
   const filename = prompt('保存するファイル名を入力してください（拡張子不要）', '着せ替え幻想郷');
 
