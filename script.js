@@ -104,12 +104,6 @@ function togglePart(category, filename) {
     layerCounters[category]++;
     img.style.zIndex = categoryZIndex[category] * 100 + layerCounters[category];
 
-    img.addEventListener('click', () => {
-      canvas.removeChild(img);
-      addedPartsMap.delete(key);
-      loadThumbnails(); // 選択状態更新
-    });
-
     canvas.appendChild(img);
     addedPartsMap.set(key, img);
   }
