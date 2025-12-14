@@ -154,3 +154,19 @@ body { font-family: sans-serif; text-align: center; }
     padding: 0.5em 1em;
   }
 }
+
+/* =========================
+   スマホ用：保存ボタン位置調整
+   ========================= */
+@media (max-width: 768px) {
+  .save-button {
+    position: relative;
+    top: -20px;        /* ボタンを上にずらす */
+    margin-bottom: 10px;
+    z-index: 20;       /* キャンバスより前に */
+  }
+
+  .canvas {
+    margin-top: 20px; /* ボタンとの重なり防止 */
+  }
+}
