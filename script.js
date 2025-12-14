@@ -334,44 +334,43 @@ function saveCanvasImage() {
   const exportWidth = 800;
   const exportHeight = 1000;
 
+  // ファイル名入力
+  const filename = prompt(
+    '保存するファイル名を入力してください（拡張子不要）',
+    '着せ替え幻想郷'
+  );
+  if (filename === null) return;
+
   // 保存用キャンバス（非表示）
   const exportCanvas = document.createElement('canvas');
   exportCanvas.width = exportWidth;
   exportCanvas.height = exportHeight;
   const ctx = exportCanvas.getContext('2d');
 
-  // 背景は透明のまま（←重要）
+  // 透明背景
   ctx.clearRect(0, 0, exportWidth, exportHeight);
 
-  // 今表示されているレイヤーを「順番通り」に描画
-  const layers = document.querySelectorAll('.layer');
+  // z-index順に並び替え
+  const layers = Array.from(document.querySelectorAll('.layer'))
+    .sort((a, b) => Number(a.style.zIndex) - Number(b.style.zIndex));
+
+  let loadedCount = 0;
 
   layers.forEach(layer => {
-    if (!layer.src) return;
-
     const img = new Image();
     img.src = layer.src;
 
     img.onload = () => {
       ctx.drawImage(img, 0, 0, exportWidth, exportHeight);
+      loadedCount++;
 
-      // 最後の1枚が描画されたら保存
-      if (img === layers[layers.length - 1]) {
-        downloadImage(exportCanvas);
+      // 全部描画し終わったら保存
+      if (loadedCount === layers.length) {
+        const link = document.createElement('a');
+        link.download = `${filename.trim() || '画像'}.png`;
+        link.href = exportCanvas.toDataURL('image/png');
+        link.click();
       }
     };
   });
-}
-  // ユーザーにファイル名を入力してもらう（デフォルト名付き）
-  const filename = prompt('保存するファイル名を入力してください（拡張子不要）', '着せ替え幻想郷');
-
-  if (filename === null) {
-    return; // キャンセルされた場合
-  }
-
-  // PNGとしてダウンロード
-  const link = document.createElement('a');
-  link.download = `${filename.trim() || '画像'}.png`; // 空ならデフォルト名
-  link.href = exportCanvas.toDataURL('image/png');
-  link.click();
 }
