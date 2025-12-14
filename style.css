@@ -124,49 +124,13 @@ body { font-family: sans-serif; text-align: center; }
   background: #e0e0e0;
 }
 
-@media (max-width: 768px) {
-  .canvas {
-    width: 90vw;   /* 画面幅の90% */
-    height: auto;
-  }
-
-  .layer {
-    width: 90vw;
-    height: auto;
-  }
-
-  .thumbnail {
-    width: 80px;
-    height: 80px;
-  }
-
-  .preset-item img {
-    width: 64px;
-    height: 64px;
-  }
-
-  .preset-item span {
-    font-size: 1.1rem;
-  }
-
-  .preset-nav button {
-    font-size: 1rem;
-    padding: 0.5em 1em;
-  }
-}
-
 /* =========================
-   スマホ用：保存ボタン位置調整
+   スマホ用：保存ボタンをキャンバス下に配置
    ========================= */
 @media (max-width: 768px) {
   .save-button {
-    position: relative;
-    top: -20px;        /* ボタンを上にずらす */
-    margin-bottom: 10px;
-    z-index: 20;       /* キャンバスより前に */
-  }
-
-  .canvas {
-    margin-top: 20px; /* ボタンとの重なり防止 */
+    display: block;
+    margin: 16px auto 0 auto; /* 上に余白を作って下に配置 */
+    position: static;         /* ← 超重要！ */
   }
 }
