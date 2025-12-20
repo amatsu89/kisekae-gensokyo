@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>着せ替え幻想郷</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <h1>着せ替え幻想郷</h1>
@@ -19,6 +18,7 @@
   <option value="inner">インナー</option>
   <option value="tops">トップス</option>
 　<option value="bottoms">ボトムス</option>
+　<option value="dress">ドレス</option>
   <option value="socks">靴下</option>
   <option value="shoes">靴</option>
   <option value="outer">上着</option>
@@ -27,6 +27,7 @@
   <option value="occiput">髪飾り2</option>
   <option value="item">アイテム</option>
   <option value="others">その他</option>
+　<option value="background">背景</option>
 </select>
     </label>
     <button onclick="loadThumbnails()">読み込む</button>
@@ -41,9 +42,26 @@
 
   <div id="thumbnails" class="thumbnails"></div>
 
-  <div id="canvas" class="canvas">
-    <img src="assets/base.png" class="layer base" />
-  </div>
+<div id="canvas" class="canvas">
+
+  <!-- 背景レイヤー（いちばん下） -->
+  <img id="backgroundLayer" class="layer background hidden" />
+
+  <!-- 素体 -->
+  <img src="assets/base.png" class="layer base" />
+
+</div>
+
+<label>
+  背景色相
+  <input
+    type="range"
+    min="0"
+    max="360"
+    value="0"
+    oninput="setBackgroundHue(this.value)"
+  >
+</label>
 
 <button onclick="saveCanvasImage()">画像を保存する</button>
 
