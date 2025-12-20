@@ -35,6 +35,8 @@ body { font-family: sans-serif; text-align: center; }
   border: 2px solid #eee;
 }
 
+
+
 .thumbnail.selected {
   border: 3px solid #00f;
   box-sizing: border-box;
@@ -123,6 +125,7 @@ body { font-family: sans-serif; text-align: center; }
 .preset-nav button:hover {
   background: #e0e0e0;
 }
+
 
 /* =========================
    スマホ用：保存ボタンをキャンバス下に配置
