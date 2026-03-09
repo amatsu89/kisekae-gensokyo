@@ -1,3 +1,4 @@
+let currentCategory = "face";
 const canvas = document.getElementById('canvas');
 const thumbnailsDiv = document.getElementById('thumbnails');
 const addedPartsMap = new Map();
@@ -73,7 +74,7 @@ const backgrounds = [
 ];
 
 function loadThumbnails() {
-  const cat = document.getElementById('categorySelect').value;
+  const cat = currentCategory;
   thumbnailsDiv.innerHTML = '';
 
   // =========================
@@ -455,6 +456,20 @@ if (end < keys.length) {
   list.appendChild(nav);
 }
 
+document.querySelectorAll("#categoryTabs button").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+
+    currentCategory = btn.dataset.cat;
+
+    document.querySelectorAll("#categoryTabs button")
+      .forEach(b=>b.classList.remove("active"));
+
+    btn.classList.add("active");
+
+    loadThumbnails();
+  });
+});
+
 function togglePresetList() {
   const list = document.getElementById('presetList');
   list.classList.toggle('hidden');
@@ -520,3 +535,6 @@ function saveCanvasImage() {
     };
   });
 }
+
+document.querySelector('#categoryTabs button[data-cat="face"]').classList.add("active");
+loadThumbnails();
