@@ -126,22 +126,19 @@ body { font-family: sans-serif; text-align: center; }
   background: #e0e0e0;
 }
 
-
 /* =========================
-   スマホ用：保存ボタンをキャンバス下に配置
+   スマホ用レイアウト
    ========================= */
 @media (max-width: 768px) {
+
+  /* 保存ボタン */
   .save-button {
     display: block;
-    margin: 16px auto 0 auto; /* 上に余白を作って下に配置 */
-    position: static;         /* ← 超重要！ */
+    margin: 16px auto 0 auto;
+    position: static;
   }
 
-/* =========================
-   スマホ：サムネイル6列固定
-   ========================= */
-@media (max-width: 768px) {
-
+  /* サムネイル6列 */
   .thumbnails{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -157,13 +154,15 @@ body { font-family: sans-serif; text-align: center; }
     margin: 2px;
   }
 
+  /* キャンバス */
   .canvas{
-  width: 340px;
-  height: 425px;
+    width: 340px;
+    height: 425px;
   }
 
   .layer{
-  width: 340px;
-  height: 425px;
+    width: 340px;
+    height: 425px;
   }
+
 }
