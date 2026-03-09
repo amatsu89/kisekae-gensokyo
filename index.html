@@ -5,65 +5,90 @@
   <meta charset="UTF-8">
   <title>着せ替え幻想郷</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <h1>着せ替え幻想郷</h1>
 
-  <div class="controls">
-    <label>カテゴリ
-<div id="categoryTabs" class="category-tabs">
-  <button data-cat="face">顔</button>
-  <button data-cat="hair">髪</button>
-  <button data-cat="sidehair">サイド</button>
-  <button data-cat="back">背中</button>
-  <button data-cat="inner">インナー</button>
-  <button data-cat="tops">トップス</button>
-  <button data-cat="bottoms">ボトムス</button>
-  <button data-cat="dress">ドレス</button>
-  <button data-cat="socks">靴下</button>
-  <button data-cat="shoes">靴</button>
-  <button data-cat="outer">上着</button>
-  <button data-cat="accessories">アクセ</button>
-  <button data-cat="headwear">髪飾り</button>
-  <button data-cat="occiput">髪飾り2</button>
-  <button data-cat="item">アイテム</button>
-  <button data-cat="others">その他</button>
-  <button data-cat="background">背景</button>
-</div>
+<h1>着せ替え幻想郷</h1>
+
+<div class="main-layout">
+
+  <!-- 左：キャラ -->
+  <div class="left-area">
+
+    <div id="canvas">
+
+      <!-- 背景 -->
+      <img id="backgroundLayer" class="layer background hidden">
+
+      <!-- 素体 -->
+      <img src="assets/base.png" class="layer base">
+
+    </div>
+
   </div>
 
-<div class="preset-select-wrapper">
-  <button class="preset-toggle-btn" onclick="togglePresetList()">キャラクター選択 ▼</button>
-  <div id="presetList" class="preset-list hidden">
-    <!-- JSで動的に中身を入れる -->
+  <!-- 右：UI -->
+  <div class="right-area">
+
+    <div class="category-title">カテゴリ</div>
+
+    <div id="categoryTabs" class="category-tabs">
+
+      <button data-cat="face">顔</button>
+      <button data-cat="hair">髪</button>
+      <button data-cat="sidehair">サイド</button>
+      <button data-cat="back">背中</button>
+      <button data-cat="inner">インナー</button>
+      <button data-cat="tops">トップス</button>
+      <button data-cat="bottoms">ボトムス</button>
+      <button data-cat="dress">ドレス</button>
+      <button data-cat="socks">靴下</button>
+      <button data-cat="shoes">靴</button>
+      <button data-cat="outer">上着</button>
+      <button data-cat="accessories">アクセ</button>
+      <button data-cat="headwear">髪飾り</button>
+      <button data-cat="occiput">髪飾り2</button>
+      <button data-cat="item">アイテム</button>
+      <button data-cat="others">その他</button>
+      <button data-cat="background">背景</button>
+
+    </div>
+
+    <div class="preset-select-wrapper">
+      <button class="preset-toggle-btn" onclick="togglePresetList()">
+        キャラクター選択 ▼
+      </button>
+
+      <div id="presetList" class="preset-list hidden"></div>
+    </div>
+
+    <div id="thumbnails" class="thumbnails"></div>
+
   </div>
-</div>
-
-  <div id="thumbnails" class="thumbnails"></div>
-
-<div id="canvas" class="canvas">
-
-  <!-- 背景レイヤー（いちばん下） -->
-  <img id="backgroundLayer" class="layer background hidden" />
-
-  <!-- 素体 -->
-  <img src="assets/base.png" class="layer base" />
 
 </div>
+
+<div class="bottom-ui">
 
 <label>
-  背景色相
-  <input
-    type="range"
-    min="0"
-    max="360"
-    value="0"
-    oninput="setBackgroundHue(this.value)"
-  >
+背景色相
+<input
+type="range"
+min="0"
+max="360"
+value="0"
+oninput="setBackgroundHue(this.value)">
 </label>
 
-<button onclick="saveCanvasImage()">画像を保存する</button>
+<button onclick="saveCanvasImage()">
+画像保存
+</button>
 
-  <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
