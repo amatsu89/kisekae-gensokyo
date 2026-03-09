@@ -146,6 +146,7 @@ select{
 
 .main-layout{
   display:flex;
+  justify-content:center;
   align-items:flex-start;
   gap:40px;
   padding:20px;
@@ -155,6 +156,25 @@ select{
   width:420px;
   display:flex;
   justify-content:center;
+}
+
+.center-area{
+  flex:1;
+  max-width:700px;
+  max-height:90vh;
+  overflow-y:auto;
+}
+
+.character-area{
+  width:200px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.preset-list{
+  max-height:400px;
+  overflow-y:auto;
 }
 
 #canvas{
@@ -224,13 +244,27 @@ h1{
   margin-bottom:20px;
 }
 
+.character-ui{
+  position:fixed;
+  right:20px;
+  top:120px;
+  z-index:1000;
+}
+
 /* =========================
    スマホ用レイアウト
    ========================= */
 @media (max-width: 768px) {
+
+.character-ui{
+  position:static;
+  margin:10px auto;
+}
+
   body{
     padding-bottom:120px;
   }
+
 .main-layout{
   flex-direction:column;
   align-items:center;
