@@ -70,7 +70,8 @@ parts.dress = [
 
 const backgrounds = [
   'ローズ.png',
-  'レース.png'
+  'レース.png',
+  '空.png'
 ];
 
 function loadThumbnails() {
