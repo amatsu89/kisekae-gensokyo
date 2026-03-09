@@ -109,6 +109,7 @@ function loadThumbnails() {
   parts[cat].forEach(filename => {
     const img = document.createElement('img');
     img.src = `assets/${cat}/${filename}`;
+    img.loading = "lazy";
     img.title = filename;
     img.className = 'thumbnail';
     img.addEventListener('click', () => {
