@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-　<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>着せ替え幻想郷</title>
   <link rel="stylesheet" href="style.css">
@@ -10,28 +10,26 @@
   <h1>着せ替え幻想郷</h1>
 
   <div class="controls">
-    <label>カテゴリ:
-<select id="categorySelect" onchange="loadThumbnails()">
-  <option value="face">顔</option>
-  <option value="hair">髪</option>
-  <option value="sidehair">サイドヘアー</option>
-  <option value="back">背中</option>
-  <option value="inner">インナー</option>
-  <option value="tops">トップス</option>
-　<option value="bottoms">ボトムス</option>
-　<option value="dress">ドレス</option>
-  <option value="socks">靴下</option>
-  <option value="shoes">靴</option>
-  <option value="outer">上着</option>
-  <option value="accessories">アクセサリー</option>
-  <option value="headwear">髪飾り</option>
-  <option value="occiput">髪飾り2</option>
-  <option value="item">アイテム</option>
-  <option value="others">その他</option>
-　<option value="background">背景</option>
-</select>
-    </label>
-    <button onclick="loadThumbnails()">読み込む</button>
+    <label>カテゴリ
+<div id="categoryTabs" class="category-tabs">
+  <button data-cat="face">顔</button>
+  <button data-cat="hair">髪</button>
+  <button data-cat="sidehair">サイド</button>
+  <button data-cat="back">背中</button>
+  <button data-cat="inner">インナー</button>
+  <button data-cat="tops">トップス</button>
+  <button data-cat="bottoms">ボトムス</button>
+  <button data-cat="dress">ドレス</button>
+  <button data-cat="socks">靴下</button>
+  <button data-cat="shoes">靴</button>
+  <button data-cat="outer">上着</button>
+  <button data-cat="accessories">アクセ</button>
+  <button data-cat="headwear">髪飾り</button>
+  <button data-cat="occiput">髪飾り2</button>
+  <button data-cat="item">アイテム</button>
+  <button data-cat="others">その他</button>
+  <button data-cat="background">背景</button>
+</div>
   </div>
 
 <div class="preset-select-wrapper">
