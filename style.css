@@ -136,4 +136,34 @@ body { font-family: sans-serif; text-align: center; }
     margin: 16px auto 0 auto; /* 上に余白を作って下に配置 */
     position: static;         /* ← 超重要！ */
   }
+
+/* =========================
+   スマホ：サムネイル6列固定
+   ========================= */
+@media (max-width: 768px) {
+
+  .thumbnails{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+    justify-items: center;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .thumbnail{
+    width: 48px;
+    height: 48px;
+    margin: 2px;
+  }
+
+  .canvas{
+  width: 340px;
+  height: 425px;
+  }
+
+  .layer{
+  width: 340px;
+  height: 425px;
+  }
 }
