@@ -47,25 +47,25 @@ layerCounters.dress = 0;
 // パーツ定義にもbackカテゴリを追加
 const parts = {
   occiput: ['博麗のリボン.png','厄神様のリボン.png'],
-  hair: ['霊夢の髪.png','魔理沙の髪.png','レミリアの髪.png','雛の髪.png','早苗の髪.png','早苗の髪（短）.png','さとりの髪.png','こいしの髪.png','こいしの髪（智）.png','ナズーリンの髪.png','小傘の髪.png','董子の髪.png','隠岐奈の髪.png','ちやりの髪.png','ユイマンの髪.png'],
-  face: ['霊夢の顔.png','魔理沙の顔.png','レミリアの顔.png','雛の顔.png','早苗の顔.png','さとりの顔.png','こいしの顔.png','ナズーリンの顔.png','小傘の顔.png','董子の顔.png','隠岐奈の顔.png','ちやりの顔.png','ユイマンの顔.png'],
+  hair: ['霊夢の髪.png','魔理沙の髪.png','レミリアの髪.png','雛の髪.png','早苗の髪.png','早苗の髪（短）.png','さとりの髪.png','こいしの髪.png','こいしの髪（智）.png','ナズーリンの髪.png','小傘の髪.png','董子の髪.png','隠岐奈の髪.png','ちやりの髪.png','ユイマンの髪.png','魅魔の髪.png'],
+  face: ['霊夢の顔.png','魔理沙の顔.png','レミリアの顔.png','雛の顔.png','早苗の顔.png','さとりの顔.png','こいしの顔.png','ナズーリンの顔.png','小傘の顔.png','董子の顔.png','隠岐奈の顔.png','ちやりの顔.png','ユイマンの顔.png','魅魔の顔.png'],
   back: ['レミリアの羽.png','ナズーリンの尾.png','ちやりの尾.png','オカルトチックなマント（後）.png'],
   inner: ['インナー（白）.png','Yシャツ（白）.png','パフスリーブブラウス（長袖）.png'],
-  tops: ['博麗のトップス.png','魔法使いのベスト（黒）.png','魔法使いのベスト（茶）.png','魔法使いのベスト（青）.png','令嬢のトップス.png','厄神様のトップス.png','風祝のトップス.png','覚妖怪のトップス.png','無意識のトップス（黒）.png','無意識のトップス（茶）.png','丸襟ベスト（黒）.png','忘れ傘のベスト.png','東深見高校のベスト.png','チュパカブラのTシャツ.png'],
-  bottoms: ['博麗のスカート.png','エプロンスカート（黒）.png','エプロンスカート（茶）.png','エプロンスカート（青）.png','令嬢のスカート.png','厄神様のスカート.png','風祝のスカート.png','覚妖怪のスカート.png','無意識のスカート.png','ロングタイトスカート（茶）.png','ダウザーのスカート.png','忘れ傘のスカート.png','東深見高校のスカート.png','秘神のスカート.png','チュパカブラのショートパンツ.png'],
-  dress: ['王女のワンピース.png'],
+  tops: ['博麗のトップス.png','魔法使いのベスト（黒）.png','魔法使いのベスト（茶）.png','魔法使いのベスト（青）.png','令嬢のトップス.png','厄神様のトップス.png','風祝のトップス.png','覚妖怪のトップス.png','無意識のトップス（黒）.png','無意識のトップス（茶）.png','丸襟ベスト（黒）.png','忘れ傘のベスト.png','東深見高校のベスト.png','チュパカブラのTシャツ.png','悪霊さんのベスト.png'],
+  bottoms: ['博麗のスカート.png','エプロンスカート（黒）.png','エプロンスカート（茶）.png','エプロンスカート（青）.png','令嬢のスカート.png','厄神様のスカート.png','風祝のスカート.png','覚妖怪のスカート.png','無意識のスカート.png','ロングタイトスカート（茶）.png','ダウザーのスカート.png','忘れ傘のスカート.png','東深見高校のスカート.png','秘神のスカート.png','チュパカブラのショートパンツ.png','悪霊さんのスカート.png'],
+  dress: ['王女のワンピース.png','シンプルな水着.png','ベルト付水着.png'],
   socks: ['令嬢のくつした.png','折り曲げくつした（白）.png','フリルくつした（白）.png','長くつした（白）.png'],
   shoes: ['靴（茶）.png','靴（青）.png','靴（黒）.png','ブーツ（黒）.png','スリッパ（ピンク）.png','下駄.png','無意識のブーツ（黒）.png','無意識のブーツ（茶）.png','厄神様のブーツ.png'],
-  outer: ['魔法使いのポンチョ.png','ダウザーのポンチョ.png','オカルトチックなマント（前）.png','秘神の上衣.png'],
+  outer: ['魔法使いのポンチョ.png','ダウザーのポンチョ.png','オカルトチックなマント（前）.png','秘神の上衣.png','悪霊さんのコート.png'],
   accessories: ['メガネ（赤）.png','マフラー（ピンク）.png','マフラー（赤）.png','ペンデュラム.png','博麗の袖.png','風祝の袖.png','厄神様のリボン（腕）.png','冬用手袋（ピンク）.png'],
   sidehair: ['霊夢の髪（前）.png','魔理沙の三つ編み.png','雛の髪（前）.png','早苗の髪（前）.png','早苗の髪（短、前）.png','雛の髪（前）.png','こいしの髪（前）.png','董子のおさげ.png'],
-  headwear: ['魔法使いの帽子（黒）.png','魔法使いの帽子（紫）.png','魔法使いの帽子（茶）.png','魔法使いの帽子（青）.png','令嬢の帽子.png','厄神様のリボン（小）.png','蛙の髪飾り.png','覚妖怪のカチューシャ.png','無意識の帽子（黒）.png','無意識の帽子（茶）.png','オカルトチックな帽子.png','秘神の帽子.png'],
-  item: ['博麗のお祓い棒.png','風祝のお祓い棒.png','箒.png','ダウジングロッド.png'],
+  headwear: ['魔法使いの帽子（黒）.png','魔法使いの帽子（紫）.png','魔法使いの帽子（茶）.png','魔法使いの帽子（青）.png','令嬢の帽子.png','厄神様のリボン（小）.png','蛙の髪飾り.png','覚妖怪のカチューシャ.png','無意識の帽子（黒）.png','無意識の帽子（茶）.png','オカルトチックな帽子.png','秘神の帽子.png','悪霊さんの帽子.png','水泳ゴーグル.png'],
+  item: ['博麗のお祓い棒.png','風祝のお祓い棒.png','箒.png','ダウジングロッド.png','悪霊さんのステッキ.png'],
   others: ['第三の目.png','閉じた第三の目.png','唐傘お化け.png','パイソン.png']
  };
 
 parts.dress = [
-  '王女のワンピース.png'
+  '王女のワンピース.png','シンプルな水着.png','ベルト付水着.png'
 ];
 
 const backgrounds = [
@@ -319,6 +319,18 @@ const presets = {
     hair: 'ユイマンの髪.png',
     dress: '王女のワンピース.png',
     others: 'パイソン.png'
+  },
+  魅魔: {
+    face: '魅魔の顔.png',
+    hair: '魅魔の髪.png',
+    inner: 'Yシャツ（白）.png',
+    tops: '悪霊さんのベスト.png',
+    bottoms: '悪霊さんのスカート.png',
+    outer: '悪霊さんのコート.png',
+    headwear: '悪霊さんの帽子.png',
+    socks: '折り曲げくつした（白）.png',
+    shoes: '靴（青）.png',
+    item: '悪霊さんのステッキ.png'
   }
 };
 
@@ -398,7 +410,8 @@ const presetIcons = {
   宇佐見菫子: 'assets/preset/アイコン董子.png',
   摩多羅隠岐奈: 'assets/preset/アイコン隠岐奈.png',
 　天火人ちやり: 'assets/preset/アイコンちやり.png',
-　ユイマン・浅間: 'assets/preset/アイコンユイマン.png'
+　ユイマン・浅間: 'assets/preset/アイコンユイマン.png',
+　魅魔: 'assets/preset/アイコン魅魔.png'
 };
 
 let currentPresetPage = 0;
@@ -472,6 +485,34 @@ document.querySelectorAll("#categoryTabs button").forEach(btn=>{
   });
 });
 
+function randomizeParts(){
+  // 一度全部消す
+  for (const key of addedPartsMap.keys()) {
+    canvas.removeChild(addedPartsMap.get(key));
+  }
+  addedPartsMap.clear();
+  for (const key in layerCounters) {
+    layerCounters[key] = 0;
+  }
+  for(const category in parts){
+    const list = parts[category];
+    if(!list || list.length === 0) continue;
+    let filename = null;
+    // 顔と髪は必ず選ぶ
+    if(category === "face" || category === "hair"){
+      filename = list[Math.floor(Math.random() * list.length)];
+    }else{
+      const randomValue = Math.floor(Math.random() * (list.length + 1));
+      if(randomValue !== list.length){
+        filename = list[randomValue];
+      }
+    }
+    if(filename){
+      togglePart(category, filename);
+    }
+  }
+}
+
 function togglePresetList() {
   const list = document.getElementById('presetList');
   list.classList.toggle('hidden');
@@ -537,6 +578,8 @@ function saveCanvasImage() {
     };
   });
 }
+
+document.getElementById("randomBtn").addEventListener("click", randomizeParts);
 
 document.querySelector('#categoryTabs button[data-cat="face"]').classList.add("active");
 loadThumbnails();
