@@ -130,6 +130,8 @@ function removeCategory(category) {
   }
 }
 
+const categoryHue = {};
+
 // 画像の追加/削除を切り替え
 function togglePart(category, filename) {
 
@@ -684,3 +686,24 @@ document.getElementById("randomBtn").addEventListener("click", randomizeParts);
 
 document.querySelector('#categoryTabs button[data-cat="face"]').classList.add("active");
 loadThumbnails();
+
+const ruleBtn = document.getElementById("ruleBtn");
+const ruleModal = document.getElementById("ruleModal");
+const closeRule = document.getElementById("closeRule");
+
+// 開く
+ruleBtn.addEventListener("click", () => {
+  ruleModal.classList.remove("hidden");
+});
+
+// 閉じる
+closeRule.addEventListener("click", () => {
+  ruleModal.classList.add("hidden");
+});
+
+// 背景クリックで閉じる
+ruleModal.addEventListener("click", (e) => {
+  if(e.target === ruleModal){
+    ruleModal.classList.add("hidden");
+  }
+});
