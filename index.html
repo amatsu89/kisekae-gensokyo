@@ -89,8 +89,32 @@ oninput="setBackgroundHue(this.value)">
 画像保存
 </button>
 
-<button id="randomBtn">🎲 ランダム</button>
+<button id="randomBtn">ランダム</button>
 
+<button id="ruleBtn">規約</button>
+
+</div>
+
+<!-- 規約モーダル -->
+<div id="ruleModal" class="modal hidden">
+  <div class="modal-content">
+
+    <h2>利用規約</h2>
+
+    <p>
+      本サイトで作成した画像について<br>
+      ・加工・改変〇<br>
+      ・商用利用〇<br>
+      ・インターネット上への投稿〇<br>
+      <br>
+以下の行為はおやめください<br>
+      ・上海アリス幻樂団様の規約に反する利用<br>
+      ・本サイト上の画像素材の二次配布
+    </p>
+
+    <button id="closeRule">閉じる</button>
+
+  </div>
 </div>
 
 <script src="script.js"></script>
