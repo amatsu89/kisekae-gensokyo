@@ -505,10 +505,10 @@ const presetIcons = {
   宇佐見菫子: 'assets/preset/アイコン董子.png',
   摩多羅隠岐奈: 'assets/preset/アイコン隠岐奈.png',
   飯綱丸龍: 'assets/preset/アイコン龍.png',
-　天火人ちやり: 'assets/preset/アイコンちやり.png',
-　豫母都日狭美: 'assets/preset/アイコン日狭美.png',
-　ユイマン・浅間: 'assets/preset/アイコンユイマン.png',
-　魅魔: 'assets/preset/アイコン魅魔.png'
+  天火人ちやり: 'assets/preset/アイコンちやり.png',
+  豫母都日狭美: 'assets/preset/アイコン日狭美.png',
+  ユイマン・浅間: 'assets/preset/アイコンユイマン.png',
+  魅魔: 'assets/preset/アイコン魅魔.png'
 };
 
 let currentPresetPage = 0;
