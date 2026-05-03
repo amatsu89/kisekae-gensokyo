@@ -657,6 +657,15 @@ function saveCanvasImage() {
   const layers = Array.from(document.querySelectorAll('.layer'))
     .sort((a, b) => Number(a.style.zIndex) - Number(b.style.zIndex));
 
+  // ★ 追加：レイヤー0対策
+  if (layers.length === 0) {
+    const link = document.createElement('a');
+    link.download = `${filename.trim() || '画像'}.png`;
+    link.href = exportCanvas.toDataURL('image/png');
+    link.click();
+    return;
+  }
+
   let loadedCount = 0;
 
   layers.forEach(layer => {
@@ -664,12 +673,22 @@ function saveCanvasImage() {
     img.src = layer.src;
 
     img.onload = () => {
-      // ★ ここが最重要
       ctx.filter = layer.style.filter || 'none';
-
       ctx.drawImage(img, 0, 0, exportWidth, exportHeight);
-
       ctx.filter = 'none';
+
+      loadedCount++;
+
+      if (loadedCount === layers.length) {
+        const link = document.createElement('a');
+        link.download = `${filename.trim() || '画像'}.png`;
+        link.href = exportCanvas.toDataURL('image/png');
+        link.click();
+      }
+    };
+
+    // ★ 追加：エラーでも進める
+    img.onerror = () => {
       loadedCount++;
 
       if (loadedCount === layers.length) {
