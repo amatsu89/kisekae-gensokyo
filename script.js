@@ -47,25 +47,25 @@ layerCounters.dress = 0;
 // パーツ定義にもbackカテゴリを追加
 const parts = {
   occiput: ['博麗のリボン.png','厄神様のリボン.png'],
-  hair: ['霊夢の髪.png','魔理沙の髪.png','パチュリーの髪.png','レミリアの髪.png','妹紅の髪.png','雛の髪.png','早苗の髪.png','早苗の髪（短）.png','さとりの髪.png','こいしの髪.png','こいしの髪（智）.png','ナズーリンの髪.png','小傘の髪.png','白蓮の髪.png','神子の髪.png','董子の髪.png','隠岐奈の髪.png','龍の髪.png','ちやりの髪.png','日狭美の髪.png','ユイマンの髪.png','魅魔の髪.png'],
-  face: ['霊夢の顔.png','魔理沙の顔.png','パチュリーの顔.png','レミリアの顔.png','妹紅の顔.png','雛の顔.png','早苗の顔.png','さとりの顔.png','こいしの顔.png','ナズーリンの顔.png','小傘の顔.png','白蓮の顔.png','神子の顔.png','董子の顔.png','隠岐奈の顔.png','龍の顔.png','ちやりの顔.png','日狭美の顔.png','ユイマンの顔.png','魅魔の顔.png'],
-  back: ['レミリアの羽.png','ナズーリンの尾.png','ちやりの尾.png','オカルトチックなマント（後）.png','マント（赤）.png'],
-  inner: ['インナー（白）.png','Yシャツ（白）.png','パフスリーブブラウス（長袖）.png','ボロいYシャツ.png'],
-  tops: ['博麗のトップス.png','魔法使いのベスト（黒）.png','魔法使いのベスト（茶）.png','魔法使いのベスト（青）.png','令嬢のトップス.png','厄神様のトップス.png','風祝のトップス.png','覚妖怪のトップス.png','無意識のトップス（黒）.png','無意識のトップス（茶）.png','丸襟ベスト（黒）.png','忘れ傘のベスト.png','東深見高校のベスト.png','チュパカブラのTシャツ.png','悪霊さんのベスト.png'],
-  bottoms: ['博麗のスカート.png','エプロンスカート（黒）.png','エプロンスカート（茶）.png','エプロンスカート（青）.png','令嬢のスカート.png','不老不死のモンペ.png','厄神様のスカート.png','風祝のスカート.png','覚妖怪のスカート.png','無意識のスカート.png','ロングタイトスカート（茶）.png','ダウザーのスカート.png','忘れ傘のスカート.png','東深見高校のスカート.png','秘神のスカート.png','チュパカブラのショートパンツ.png','悪霊さんのスカート.png'],
-  dress: ['七曜魔女のネグリジェ.png','僧侶のドレス.png','聖徳王のワンピース.png','大天狗のワンピース.png','王女のワンピース.png','黄泉のドレス.png','ドット柄水着.png','シンプルな水着.png','ベルト付水着.png'],
-  socks: ['リボン付きくつした（水）.png','令嬢のくつした.png','折り曲げくつした（白）.png','フリルくつした（白）.png','ハイソックス（黒）.png','長くつした（白）.png'],
-  shoes: ['靴（茶）.png','靴（青）.png','靴（黒）.png','ブーツ（黒）.png','V字ブーツ（黒）.png','スリッパ（ピンク）.png','下駄.png','不老不死のブーツ.png','厄神様のブーツ.png','無意識のブーツ（黒）.png','無意識のブーツ（茶）.png','僧侶のブーツ.png','聖徳王の靴.png','大天狗の靴.png'],
-  outer: ['魔法使いのポンチョ.png','七曜魔女のアウター.png','ダウザーのポンチョ.png','オカルトチックなマント（前）.png','秘神の上衣.png','大天狗のコート.png','悪霊さんのコート.png'],
+  hair: ['霊夢の髪.png','魔理沙の髪.png','パチュリーの髪.png','レミリアの髪.png','妖夢の髪.png','妹紅の髪.png','雛の髪.png','早苗の髪.png','早苗の髪（短）.png','さとりの髪.png','こいしの髪.png','こいしの髪（智）.png','ナズーリンの髪.png','小傘の髪.png','白蓮の髪.png','神子の髪.png','董子の髪.png','ドレミーの髪.png','ドレミーの髪（長）.png','隠岐奈の髪.png','龍の髪.png','ちやりの髪.png','日狭美の髪.png','ユイマンの髪.png','魅魔の髪.png','神綺の髪.png'],
+  face: ['霊夢の顔.png','魔理沙の顔.png','パチュリーの顔.png','レミリアの顔.png','妖夢の顔.png','妹紅の顔.png','雛の顔.png','早苗の顔.png','さとりの顔.png','こいしの顔.png','ナズーリンの顔.png','小傘の顔.png','白蓮の顔.png','神子の顔.png','董子の顔.png','ドレミーの顔.png','隠岐奈の顔.png','龍の顔.png','ちやりの顔.png','日狭美の顔.png','ユイマンの顔.png','魅魔の顔.png','神綺の顔.png'],
+  back: ['レミリアの羽.png','神綺の羽.png','ナズーリンの尾.png','ドレミーの尾.png','ちやりの尾.png','オカルトチックなマント（後）.png','マント（赤）.png','楼観剣＆白楼剣.png'],
+  inner: ['インナー（白）.png','Yシャツ（白）.png','パフスリーブブラウス（長袖）.png','パフスリーブブラウス（半袖）.png','ボロいYシャツ.png'],
+  tops: ['博麗のトップス.png','魔法使いのベスト（黒）.png','魔法使いのベスト（茶）.png','魔法使いのベスト（青）.png','令嬢のトップス.png','半人半霊のベスト.png','厄神様のトップス.png','風祝のトップス.png','覚妖怪のトップス.png','無意識のトップス（黒）.png','無意識のトップス（茶）.png','丸襟ベスト（黒）.png','忘れ傘のベスト.png','東深見高校のベスト.png','チュパカブラのTシャツ.png','悪霊さんのベスト.png','ゆっくりTシャツ.png'],
+  bottoms: ['博麗のスカート.png','エプロンスカート（黒）.png','エプロンスカート（茶）.png','エプロンスカート（青）.png','令嬢のスカート.png','半人半霊のスカート.png','不老不死のモンペ.png','厄神様のスカート.png','風祝のスカート.png','覚妖怪のスカート.png','無意識のスカート.png','ロングタイトスカート（茶）.png','ダウザーのスカート.png','忘れ傘のスカート.png','東深見高校のスカート.png','秘神のスカート.png','チュパカブラのショートパンツ.png','悪霊さんのスカート.png'],
+  dress: ['七曜魔女のネグリジェ.png','僧侶のドレス.png','聖徳王のワンピース.png','獏のワンピース.png','大天狗のワンピース.png','王女のワンピース.png','黄泉のドレス.png','魔神のドレス.png','ドット柄水着.png','シンプルな水着.png','ベルト付水着.png'],
+  socks: ['リボン付きくつした（水）.png','リボン付きくつした（黒）.png','令嬢のくつした.png','折り曲げくつした（白）.png','フリルくつした（白）.png','ハイソックス（黒）.png','長くつした（白）.png'],
+  shoes: ['靴（茶）.png','靴（青）.png','靴（赤）.png','靴（黒）.png','ブーツ（黒）.png','V字ブーツ（黒）.png','スリッパ（ピンク）.png','下駄.png','不老不死のブーツ.png','厄神様のブーツ.png','無意識のブーツ（黒）.png','無意識のブーツ（茶）.png','僧侶のブーツ.png','聖徳王の靴.png','大天狗の靴.png'],
+  outer: ['魔法使いのポンチョ.png','七曜魔女のアウター.png','ダウザーのポンチョ.png','オカルトチックなマント（前）.png','獏のポンチョ.png','秘神の上衣.png','大天狗のコート.png','悪霊さんのコート.png'],
   accessories: ['メガネ（赤）.png','七曜魔女のイヤリング.png','マフラー（ピンク）.png','マフラー（赤）.png','ペンデュラム.png','首掛け数珠.png','博麗の袖.png','風祝の袖.png','厄神様のリボン（腕）.png','聖徳王のブレスレット.png','長手袋（黒）.png','冬用手袋（ピンク）.png','腰付き七星剣.png'],
   sidehair: ['霊夢の髪（前）.png','魔理沙の三つ編み.png','パチュリーの髪（前）.png','早苗の髪（前）.png','早苗の髪（短、前）.png','雛の髪（前）.png','こいしの髪（前）.png','董子のおさげ.png','日狭美の髪（前）.png'],
-  headwear: ['魔法使いの帽子（黒）.png','魔法使いの帽子（紫）.png','魔法使いの帽子（茶）.png','魔法使いの帽子（青）.png','七曜魔女の帽子.png','令嬢の帽子.png','不老不死のリボン.png','厄神様のリボン（小）.png','蛙の髪飾り.png','覚妖怪のカチューシャ.png','無意識の帽子（黒）.png','無意識の帽子（茶）.png','聖徳王の耳当て.png','オカルトチックな帽子.png','秘神の帽子.png','大天狗の帽子.png','黄泉のマスク.png','悪霊さんの帽子.png','水泳ゴーグル.png','笠.png'],
+  headwear: ['魔法使いの帽子（黒）.png','魔法使いの帽子（紫）.png','魔法使いの帽子（茶）.png','魔法使いの帽子（青）.png','七曜魔女の帽子.png','令嬢の帽子.png','半人半霊のカチューシャ.png','不老不死のリボン.png','厄神様のリボン（小）.png','蛙の髪飾り.png','覚妖怪のカチューシャ.png','無意識の帽子（黒）.png','無意識の帽子（茶）.png','聖徳王の耳当て.png','オカルトチックな帽子.png','獏の帽子.png','秘神の帽子.png','大天狗の帽子.png','黄泉のマスク.png','悪霊さんの帽子.png','赤水晶の髪留め.png','水泳ゴーグル.png','笠.png'],
   item: ['博麗のお祓い棒.png','風祝のお祓い棒.png','箒.png','ダウジングロッド.png','笏.png','悪霊さんのステッキ.png'],
-  others: ['第三の目.png','閉じた第三の目.png','唐傘お化け.png','パイソン.png']
+  others: ['半霊.png','第三の目.png','閉じた第三の目.png','唐傘お化け.png','パイソン.png']
  };
 
 parts.dress = [
-  '七曜魔女のネグリジェ.png','僧侶のドレス.png','聖徳王のワンピース.png','大天狗のワンピース.png','黄泉のドレス.png','王女のワンピース.png','ドット柄水着.png','シンプルな水着.png','ベルト付水着.png'
+  '七曜魔女のネグリジェ.png','僧侶のドレス.png','聖徳王のワンピース.png','獏のワンピース.png','大天狗のワンピース.png','黄泉のドレス.png','王女のワンピース.png','魔神のドレス.png','ドット柄水着.png','シンプルな水着.png','ベルト付水着.png'
 ];
 
 const backgrounds = [
@@ -247,6 +247,19 @@ const presets = {
     headwear: '令嬢の帽子.png',
     socks: '令嬢のくつした.png'
   },
+  魂魄妖夢: {
+    face: '妖夢の顔.png',
+    hair: '妖夢の髪.png',
+    back: '楼観剣＆白楼剣.png',
+    inner: 'パフスリーブブラウス（半袖）.png',
+    tops: '半人半霊のベスト.png',
+    bottoms: '半人半霊のスカート.png',
+    headwear: '半人半霊のカチューシャ.png',
+    socks: '折り曲げくつした（白）.png',
+    shoes: '靴（黒）.png',
+    others: '半霊.png'
+  },
+
   藤原妹紅: {
     face: '妹紅の顔.png',
     hair: '妹紅の髪.png',
@@ -360,6 +373,15 @@ const presets = {
     shoes: '靴（茶）.png',
     accessories: 'メガネ（赤）.png'
   },
+  ドレミー・スイート: {
+    face: 'ドレミーの顔.png',
+    hair: 'ドレミーの髪.png',
+    back: 'ドレミーの尾.png',
+    dress: '獏のワンピース.png',
+    outer: '獏のポンチョ.png',
+    headwear: '獏の帽子.png',
+    socks: 'リボン付きくつした（黒）.png'
+  },
   摩多羅隠岐奈: {
     face: '隠岐奈の顔.png',
     hair: '隠岐奈の髪.png',
@@ -411,7 +433,16 @@ const presets = {
     socks: '折り曲げくつした（白）.png',
     shoes: '靴（青）.png',
     item: '悪霊さんのステッキ.png'
-  }
+  },
+  神綺: {
+　　face: '神綺の顔.png',
+　　hair: '神綺の髪.png',
+　　back: '神綺の羽.png',
+　　dress: '魔神のドレス.png',
+　　socks: '折り曲げくつした（白）.png',
+　　shoes: '靴（赤）.png',
+　　headwear: '赤水晶の髪留め.png'
+　}
 };
 
 function applyPreset(presetName) {
@@ -492,6 +523,7 @@ const presetIcons = {
   霧雨魔理沙・大戦争: 'assets/preset/アイコン魔理沙（大戦争）.png',
   パチュリー・ノーレッジ: 'assets/preset/アイコンパチュリー.png',
   レミリア・スカーレット: 'assets/preset/アイコンレミリア.png',
+  魂魄妖夢: 'assets/preset/アイコン妖夢.png',
   藤原妹紅: 'assets/preset/アイコン妹紅.png',
   鍵山雛: 'assets/preset/アイコン雛.png',
   東風谷早苗: 'assets/preset/アイコン早苗.png',
@@ -503,12 +535,14 @@ const presetIcons = {
   聖白蓮: 'assets/preset/アイコン白蓮.png',
   豊聡耳神子: 'assets/preset/アイコン神子.png',
   宇佐見菫子: 'assets/preset/アイコン董子.png',
+  ドレミー・スイート: 'assets/preset/アイコンドレミー.png',
   摩多羅隠岐奈: 'assets/preset/アイコン隠岐奈.png',
   飯綱丸龍: 'assets/preset/アイコン龍.png',
   天火人ちやり: 'assets/preset/アイコンちやり.png',
   豫母都日狭美: 'assets/preset/アイコン日狭美.png',
   ユイマン・浅間: 'assets/preset/アイコンユイマン.png',
-  魅魔: 'assets/preset/アイコン魅魔.png'
+  魅魔: 'assets/preset/アイコン魅魔.png',
+  神綺: 'assets/preset/アイコン神綺.png'
 };
 
 let currentPresetPage = 0;
@@ -705,6 +739,7 @@ document.getElementById("randomBtn").addEventListener("click", randomizeParts);
 
 document.querySelector('#categoryTabs button[data-cat="face"]').classList.add("active");
 loadThumbnails();
+togglePart("tops", "ゆっくりTシャツ.png");
 
 const ruleBtn = document.getElementById("ruleBtn");
 const ruleModal = document.getElementById("ruleModal");
